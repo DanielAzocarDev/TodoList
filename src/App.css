@@ -1,1 +1,17 @@
+body {
+  background: #5151dd;
+  color: #fff;
+  text-align: center;
+}
 
+.container {
+  width: 350px;
+  background: #4242a1;
+  box-sizing: content-box;
+  padding: 15px 10px;
+  margin: 30px auto;
+}
+
+.container h1 {
+  margin: 0 0 20px 0;
+}

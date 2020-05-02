@@ -8,8 +8,11 @@ import "./App.css";
 function App() {
   return (
     <TodoContextProvider className="App">
-      <TodoForm />
-      <TodoList />
+      <div className="container">
+        <h1>ToDo List!</h1>
+        <TodoForm />
+        <TodoList />
+      </div>
     </TodoContextProvider>
   );
 }

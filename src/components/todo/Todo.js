@@ -6,6 +6,7 @@ const Todo = ({ todo }) => {
   const { removeTodo } = useContext(TodoContext);
   return (
     <div
+      className="todo"
       onClick={() => {
         removeTodo(todo.id);
       }}
