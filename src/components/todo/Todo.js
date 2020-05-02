@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TodoContext } from "../../TodoContext/todoContext";
 import "./Todo.css";
 
-const Todo = () => {
-  return <div>Todo</div>;
+const Todo = ({ todo }) => {
+  const { removeTodo } = useContext(TodoContext);
+  return (
+    <div
+      onClick={() => {
+        removeTodo(todo.id);
+      }}
+    >
+      {todo.title}
+    </div>
+  );
 };
 
 export default Todo;
